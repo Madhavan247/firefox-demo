@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube.com</title>
+    <script src="https://kit.fontawesome.com/1c43f10a9f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"href="style.css"type="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .header-point{
+            display: flex;
+            justify-content: space-between;
+            /* border-bottom:1px solid; */
+        }
+        .header-point.left-point{
+            display: flex;
+            /* align-items: center; */
+        }
+        .header-point.right-point{
+            display: flex;
+        }
+        .header-point.left-point,.center-point,.right-point{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .left-point img{
+            /* display: flex; */
+            width: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        .left-point{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-left:30px ;
+        }
+        .center,.center-point i{
+            display: flex;
+            /* border: 1px solid; */
+            align-items: center;
+            justify-content: center;
+        }
+        .right-point{
+            display: flex;
+            gap: 20px;
+            padding-right:30px ;
+            margin: 10px;
+            align-items: center;
+            
+        }
+        .profile{
+            border-radius:50%;
+        }
+        .center-point{
+            border: 1px solid;
+            margin: 10px;
+            border-radius: 25px;
+        }
+        .center-point input{
+            width: 40vw;
+            height: 6vh;
+            padding-right: 5px;
+            margin-right: 10px;
+            /* border-radius: 25px; */
+            border: none;
+            
+    
+        }
+        .center-point,.abd{
+            padding:0 15px 0 15px;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(to,right white,gray);
+        }
+        .body-bar.side-bar{
+            border: 1px solid;
+            display: grid;
+            grid-template-columns: .1fr 2fr;
+        }
+        .layout{
+            /* border: 1px solid; */
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+            height: 100vh;
+            width: 90vw;
+        }
+        .nav-bar{
+            border: 1px solid;
+        }
+        .layout ul{
+            list-style-type: none;
+       }
+       .layout{
+        position: sticky;
+        top: scroll;
+       }
+       
+       .vid-bar ul{
+        /* border: 1px solid; */
+        display:inline-flex;
+        gap: 20px;
+       }
+       ul{
+        
+        /* border: 1px solid; */
+       }
+       .vid-bar ul li{
+        display: inline-block;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: rgb(200, 194, 194);
+        padding: 5px;
+        /* margin:10px */
+       }
+       .vid-bar a{
+        text-decoration: none;
+        color: black;
+       }
+       iframe{
+        border: 1px solid;
+        display: inline;
+        width: 300px;
+        margin: 40px;
+       }
+       
+    </style>
+</head>
+<body>
+        <div class="header-point">
+            <div class="left-point">
+                <i class="fa-solid fa-bars"></i>
+                <img src="youtube2.jpg">
+            </div>
+            <div class="center">
+                    <div class="center-point">
+                        <input type=""placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass"class="icons"></i>
+                    </div>
+                        <i class="fa-solid fa-microphone"class="adb"></i>
+            </div>
+                    <div class="right-point">
+                        <div class="right-side">
+                            <i class="fa-solid fa-plus"></i>
+                            create
+                        </div>
+                            <i class="fa-solid fa-bell"></i>
+                    </div>
+        </div>
+        
+        <div class="layout">
+            <div class="nav-bar">
+        <ul>
+            <li><button><i class="fa-solid fa-house"></i>Home</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Short</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Subscription</button></li>
+        </ul>
+        <hr>
+        <span>You ></span>
+        <ul>
+            <li><button><i class="fa-solid fa-house"></i>History</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Playlist</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your video</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your course</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Watch Later</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Like Videos</button></li>
+        </ul>
+        <hr>
+        <span>Subscriptions</span>
+        <ul>
+            <li><button><i class="fa-solid fa-house"></i>History</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Playlist</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your video</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your course</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Watch Later</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Like Videos</button></li>
+        </ul>
+        <hr>
+        <span>Explore</span>
+        <ul>
+            <li><button><i class="fa-solid fa-house"></i>History</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Playlist</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your video</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your course</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Watch Later</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Like Videos</button></li>
+            <li><button><i class="fa-solid fa-house"></i>History</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Playlist</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your video</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your course</button></li>
+            
+        </ul>
+        <hr>
+        <span>More form Youtube</span>
+        <ul>
+            <li><button><i class="fa-solid fa-house"></i>History</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Playlist</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your video</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your course</button></li>
+        </ul>
+        <ul>
+            <li><button><i class="fa-solid fa-house"></i>History</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Playlist</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your video</button></li>
+            <li><button><i class="fa-solid fa-house"></i>Your course</button></li>
+        </ul>
+            </div>
+            <div class="vid-bar">
+                <ul>
+                    <li><a href="">All</a></li>
+                    <li><a href="">Game</a></li>
+                    <li><a href="">Movie</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="">Live</a></li>
+                    <li><a href="">Tamil cinima</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Mixes</a></li>
+                    <li><a href="">Battlegrounds mobile india</a></li>
+                    <li><a href="">java script</a></li>
+                </ul>
+                <!-- <hr> -->
+                        <div class="right-layout">
+        <iframe width="300" height="300" src="https://www.youtube.com/embed/ZZTYQIUd_uY?si=OVQsBvmH_k7jephK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="300" height="300" src="https://www.youtube.com/embed/ZZTYQIUd_uY?si=OVQsBvmH_k7jephK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/ZZTYQIUd_uY?si=OVQsBvmH_k7jephK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/ZZTYQIUd_uY?si=OVQsBvmH_k7jephK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/ZZTYQIUd_uY?si=OVQsBvmH_k7jephK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/ZZTYQIUd_uY?si=OVQsBvmH_k7jephK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/ZZTYQIUd_uY?si=OVQsBvmH_k7jephK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/ZZTYQIUd_uY?si=OVQsBvmH_k7jephK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/ZZTYQIUd_uY?si=OVQsBvmH_k7jephK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         
+    </div>
+        </div>
+            </div>
+        
+        </div>
+
+    
+</body>
+</html>

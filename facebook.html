@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook.com</title>
+    <link rel="icon"href="https://static.xx.fbcdn.net/rsrc.php/yx/r/e9sqr8WnkCf.ico"type="image/webp">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .login{
+            height: 100vh;
+            padding: 1px solid;
+        }
+        body{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+        }
+        .logo-box{
+            border: 1px solid;
+            width:120vh;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left:100px;
+        }
+
+        img{
+            /* border: 1px solid; */
+            width:200px;
+
+
+        }
+        p{ 
+             /* border: 1px solid; */
+             font-weight: 400;
+            font-size: 25px;
+        }
+
+        .login{
+            border: 1px solid;
+            width: 50vh;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 150px
+        }
+        .container{
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            
+        }
+        .container input{
+            width: 300px;
+            height: 35px;
+            /* display: flex;
+            gap: 15px; */
+        }
+        .container button{
+            height: 35px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            background-color: aqua;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(80, 80, 222);
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div class="logo">
+    <div class="logo-box">
+        <img src="C:\Users\madhavan\Documents\frontend\facebook.webp">
+        <p>Facebook helps you connect and share<br>with the people in your life.</p>
+    </div>
+    </div>
+    <div class="login">
+        <div class="container">
+            <input type="text" placeholder="Enter Email or phone">
+            <input type="password"placeholder="password">
+            <button> Login </button>
+        </div>
+    </div>
+
+</body>
+</html>

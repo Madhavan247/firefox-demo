@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google.com</title>
+    <link class="title" rel="icons"href="C:\Users\madhavan\Documents\frontend/google.webp"type="image.com">
+   <script src="https://kit.fontawesome.com/1c43f10a9f.js" crossorigin="anonymous"></script>
+   <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .title{
+            border-radius: 5px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .header ul{
+            display:flex;
+            margin: 20px;
+            list-style-type:none;
+            justify-content: center;
+            align-items: center;
+            gap:15px;
+
+        }
+        .header a{
+            text-decoration: none;
+            color: black;
+        }
+        .profile{
+            border-radius: 50px;
+        }
+
+        .header a :hover{
+            text-decoration: underline;
+        }
+        body{
+            /* background-image: url(google-logo.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat; */
+        
+
+        }
+        .image{
+            /* border: 1px solid; */
+            maxwidth: fit-content;
+            width: 53vh;
+            height: 20vh;
+            margin-left: 83vh;
+        }
+        .container1{
+            /* border: 1px solid; */
+            display: inline;
+            /* margin-top: 30px; */
+
+        }
+        .search{
+            border: 1px solid;
+            border-radius: 25px;
+            max-width: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+            margin-left:400px ;
+        }
+        .search input{
+            width:500px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            
+        }
+        .ai{
+            /* border: 1px solid; */
+            border-radius: 25px;
+            gap: 4px ;
+            padding: 5px 5px;
+
+            
+        }
+        .ai:hover{
+            cursor: pointer;
+            background-color: lightgray;
+        }
+        .in-button ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding-top: 10px 10px;
+        }
+        .in-button{
+            /* display: flex; */
+            gap:20px;
+            padding: 15px 15px; 
+            
+        }
+        button{
+            border: none;
+            border-radius: 3px;
+            width: 150px;
+            height: 40px;
+            background-color: rgb(173, 169, 169);
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(200, 193, 193);
+        }
+        .lang ul{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            gap: 15px;
+            padding-top: 25px;
+            /* list-style-type:none; */
+            font-size: 13px;
+        }
+        .lang a{
+            text-decoration: none;
+        }
+        .foot{
+            display: flex;
+            background-color: black;
+            justify-content: space-between;
+        }
+        .foot ul{
+            display:flex;
+            margin: 20px;
+            list-style-type:none;
+            justify-content: center;
+            align-items: center;
+            gap:15px;
+            text-decoration: none;
+            padding-bottom: 8px;
+            /* padding-top: 40px; */
+        }
+        footer a{
+            color:white;
+        }
+        footer{
+            margin-top: 190px;
+        }
+        p{  
+            background-color: black;
+            border-top: 0.5px solid;
+            display: flex;
+            color:white;
+            /* margin-left:20px; */
+            font-size: 17px;
+            gap:15px;
+            padding: 20px;
+            
+
+        }
+        footer a{
+            text-decoration: none;
+            padding-bottom: 8px;
+        }
+        .ind{
+            border-bottom: 0.2px solid white;
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header">
+        <div class="left">
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Store</a></li>
+            
+        </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="">Group</a></li>
+                <li><a href="">Image</a></li>
+                <li><img src="https://ssl.gstatic.com/gb/images/bar/al-icon.png"></li>
+                <li><img class="profile" src="https://lh3.googleusercontent.com/ogw/AF2bZyjGmplMMAwEcyttzoTcJupXbEc2sSDF0ue8P0BN0EwcjvM=s32-c-mo"></li>
+
+            </ul>
+        </div>
+
+    </div>
+    </header>
+        <div class="container 1">
+            <img class="image" src="download (1).png">
+            <div class="search">
+        <i class="fa-solid fa-magnifying-glass"class="icons"></i>
+        <input type="text"placeholder="Searching or google type"class="search-box">
+        <i class="fa-solid fa-microphone"class=icons2></i>
+        <i class="fa-regular fa-camera"></i>
+        <div class="ai">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Ai mode
+        </div>
+                </div>
+        <div class="in-button">
+            <ul>
+                <li><button>Google search</button></li>
+                <li><button>I'm feeling lucky</button></li>
+            </ul>
+
+        </div>
+        <div class="lang">
+            <ul> <li><a>google offered in:</a></li>    
+                <li><a href="">हिन्दी </a></li>
+                <li><a href="">বাংলা</a></li>
+                <li><a href="">తెలుగు</a></li>
+                <li><a href="">मराठी</a></li>
+                <li><a href="">தமிழ்</a></li>
+                <li><a href="">ગુજરાતી</a></li>
+                <li><a href="">ಕನ್ನಡ</a></li>
+                <li><a href="">മലയാളം</a></li>
+                <li><a href="">ਪੰਜਾਬੀ</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="ind">
+            <p>india</p>
+            </div>
+            <!-- <hr> -->
+        </div>
+        <div class="foot">  
+        <div class="foot-left">
+            <ul>
+                <li><a href ="">Adversing</a></li>
+                <li><a href ="">business</a></li>
+                <li><a href ="">How search works</a></li>
+            </ul>
+        </div>
+        <div class="foot-right">
+            <ul>
+                <li><a href ="">privacy</a></li>
+                <li><a href ="">Terms</a></li>
+                <li><a href ="">Settings</a></li>
+                <!-- <li><a href ="">Settings</a></li> -->
+            </ul>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+kumarsathishsk623@gmail.com

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golden World - Online Gold Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff9ec;
+  color: #333;
+}
+
+.navbar {
+  background-color: #b88900;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-items span,
+.cart-icon {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 0 30px 50px;
+}
+
+.product {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.product p {
+  font-weight: bold;
+  color: #e00202;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #b88900;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ed0e0e;
+}
+
+footer {
+  background-color: #b88900;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    position: relative;
+    left:10px;
+}
+
+  </style>
+  <script>
+    let cartCount = 0;
+
+function addToCart(productName, price) {
+  cartCount++;
+  document.getElementById("cart-count").innerText = cartCount;
+  alert(` Added to cart:\n${productName} - ₹${price}`);
+}
+
+  </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Golden World</div>
+    <div class="nav-items">
+      <span>Home</span>
+      <span>Chains</span>
+      <span>Contact</span>
+      <div class="cart-icon">Gpay : 8610566874<span id="cart-count"> </span></div>
+    </div>
+  </header>
+  <main class="product-section">
+    <h2 class="section-title">Popular Gold Chains</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="data:image/jpeg;base64,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" alt="22K Gold Chain" />
+        <h3> Classic Chain</h3>
+        <p>₹47,800</p>
+        <button onclick="addToCart('22K Classic Chain', 47800)">Buy Now</button>
+      </div>
+
+      <div class="product">
+        <img src="https://www.suvidhiornaments.com/live/img/business_product/5w4GqvT5mZ_20230601131649.jpg" alt="18K Gold Chain" />
+        <h3>Elegant Chain</h3>
+        <p>₹33,600</p>
+        <button onclick="addToCart('18K Elegant Chain', 33600)">Buy Now</button>
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrjNO6lAdegZs9ZacRGZ5eIlgttAIj9j0FEfjeN1Rx43bXPYw-e9u6T65zFPTBpd3uIZ4&usqp=CAU" alt="24K Gold Chain" />
+        <h3> Royal Chain</h3>
+        <p>₹59,999</p>
+        <button onclick="addToCart('24K Royal Chain', 59999)">Buy Now</button>
+      </div>
+
+      <div class="product">
+        <img src="https://5.imimg.com/data5/ECOM/Default/2023/8/331529583/TI/CP/HP/11885699/18b27373978e2d1675cf6424e04fd6ea-500x500.jpg" alt="Fancy Chain" />
+        <h3>Fancy Stylish Chain</h3>
+        <p>₹42,500</p>
+        <button onclick="addToCart('Fancy Stylish Chain', 42500)">Buy Now</button>
+      </div>
+    </div>
+        <button><a href="http://127.0.0.1:5500/mall.html"> Back To Home</a></button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Golden World. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

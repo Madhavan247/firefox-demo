@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram.com</title>
+    <link rel="icon"href="insta.jpg"type="/image.jpg">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: black;
+        }
+        .logo{
+            /* border: 1px solid red; */
+            height: 100vh;
+        
+
+        }
+        .login-page {
+            /* border: 1px solid rgb(89, 0, 255); */
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 200px;
+            /* height: 50vh; */
+            width: 70vh;
+            
+        }
+        .login {
+           display: flex;
+           flex-direction: column;
+           gap: 10px; 
+        
+
+        }
+        .logo-box{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 200px;
+            padding:0% 15% 0% 15%;
+            /* border-radius: 30px; */
+        }
+        .logo-box img{
+            border-radius: 30px;
+            padding: 0px 10px 0 10px;
+        }
+        /* .login img{
+            width: 50vh;
+        } */
+        .login input{
+            padding : 10px;
+            display: flex;
+            flex-direction: column;
+            width: 45vh;
+            border-radius: 4px;
+            background-color: rgb(81, 78, 78);
+            /* color: rgb(190, 6, 6); */
+            border: 1px solid rgb(168, 164, 164);
+            
+            
+            /* padding: 10px; */
+        }
+        .login button{
+            padding:10px;
+            width: 45vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: rgb(74, 147, 242);
+            
+            
+        }
+        .login button:hover{
+            cursor: pointer;
+            background-color:rgb(77, 77, 228);
+        }
+         a{
+             /* font-family: 'Courier New', Courier, monospace;  */
+            color: white;
+            display: flex;
+            flex-direction:column;
+             text-align: center;
+
+        }
+        .for{
+            color: rgb(63, 44, 229);
+            text-align: center;
+            display: flex;
+            flex-direction:center;
+            align-items: center;
+            gap: 15px;
+            padding-left: 50px;
+
+            
+        }
+        .for:hover{
+            cursor: pointer;
+        }
+        input::placeholder{
+            color:rgb(214, 199, 199);
+        }
+        .pass{
+            color: white;
+            display: flex;
+            text-align: center;
+            
+        }
+        b{
+            color: rgb(101, 101, 218);
+            cursor: pointer;
+        }
+        hr{
+            width: 100px;
+        }
+        .or{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            color: white;
+        }
+        .page{
+            color: white;
+            text-align: center;
+        }
+
+        .and {
+            display: inline;
+            color: blue;
+            display: flex;
+            text-align: center;
+            padding-bottom: 25px;
+            text-decoration: none;
+        }
+
+        .and:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        
+        }
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo-box">
+            <img src="myinstagram.png"height="250px">
+        </div>
+    </div>
+    <div class="login-page">
+        <div class="login">
+            <!-- <img url=(&quot;https://static.cdninstagram.com/rsrc.php/v4/yz/r/H_-3Vh0lHeK.png&quot;)> -->
+            <input type="text"placeholder="Enter email or phone">
+            <input type="password"placeholder="password">
+            <button>login</button>
+            <br>
+            <div class="or">
+                <hr>
+                <p>or</p>
+                <hr>
+            </div>
+            <div class="for"><img src="https://static.xx.fbcdn.net/rsrc.php/yx/r/e9sqr8WnkCf.ico">Login with in facebook</div>
+            <div>
+            <a class="pass">Forgotten your password?</a>
+            <br>
+            <br>
+            <p class="page"> have an account?</p>
+            <a class="and" href="">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

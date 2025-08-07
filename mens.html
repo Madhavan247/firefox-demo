@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Men's Outfit Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.navbar {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart {
+  font-size: 1.2em;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #21867a;
+}
+
+footer {
+  text-align: center;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+  </style>
+  <script>
+    let cartCount = 0;
+
+function addToCart() {
+  cartCount++;
+  document.getElementById('cart-count').innerText = cartCount;
+}
+
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>Men's Outfit Shop</h2>
+    <div class="cart">
+    <span id="cart-count">0</span>
+    </div>
+  </nav>
+
+  <section class="products">
+    <h3>New Brand </h3>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmXFc1Gi9JfYAYJVkvFug6twDgYI8nIRhS0A&s" alt="Shirt">
+      <h3>Formal Shirt</h3>
+      <p class="price">₹899</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button> Buy </button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhMOaji9CWiQjQ4_dRK0uXszhpvrKztNwd8w&s" alt="T-Shirt">
+      <h3>Formal Shirt</h3>
+      <p class="price">₹1499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button> Buy </button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs25ysca9MAU0bwHA-3yT3iluiQnDfgw749w&s" alt="T-Shirt">
+      <h3>Goa Shirt</h3>
+      <p class="price">₹499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button> Buy </button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBhvUay2_kE8NZCYTuETR_0i50JKzPqjk7PA&s" alt="T-Shirt">
+      <h3>Jeans pant & shirt</h3>
+      <p class="price">₹999</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button> Buy </button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgSjxsmkCaM52BywTsQc8ktUK0TwPZ6pEnA&s" alt="T-Shirt">
+      <h3>Jeans pant</h3>
+      <p class="price">₹1499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button> Buy </button>
+    </div>
+
+    <h3> Big Offer </h3>
+
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0NeaHWQQJ8ZwFQonCKG2Vtzy3uNaJkz7Iw&s" alt="T-Shirt">
+      <h3>Formal Shirt</h3>
+      <p class="price">₹999</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button> Buy </button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5L9CkyqNDYXSB5rHjOql_btiOwR7A3nBiRu9aVJly3HFOr_3Mcwl9YlLqG6W4xd9jzPk&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5L9CkyqNDYXSB5rHjOql_btiOwR7A3nBiRu9aVJly3HFOr_3Mcwl9YlLqG6W4xd9jzPk&usqp=CAU" alt="T-Shirt">
+      <h3>Formal Shirt</h3>
+      <p class="price">₹1499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button> Buy </button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnAtE141KaqwFQpOlqPYKJE3kgb1f-7tnAWw&s" alt="T-Shirt">
+      <h3>Jeans pant</h3>
+      <p class="price">₹1499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button> Buy </button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTh_kfAn7cuZHbqMcQP7XcNbQO2HbBxeF5dg&s" alt="T-Shirt">
+      <h3>Black jeans</h3>
+      <p class="price">₹1499</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button>Buy</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-pyO6dyZPDoa3wn2IppP1FoGXJYJxF-ogAg&s" alt="Jeans">
+      <h3>cotton pant</h3>
+      <p class="price">₹1299</p>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button> Buy </button>
+    </div>
+    <button><a href="http://127.0.0.1:5500/mall.html"> Back To Home</a></button>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Men's Outfit Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
