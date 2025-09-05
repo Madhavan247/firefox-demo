@@ -1,1 +1,0 @@
-let  score =Number(prompt()
